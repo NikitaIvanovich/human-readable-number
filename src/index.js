@@ -5,7 +5,7 @@ module.exports = function NumToWord(num) {
 
     num = num.toString();
     num = num.replace(/[\, ]/g, '');
-    if (num != parseFloat(num)) return 'not a number';
+    if (num != parseFloat(num)) return 'fail!';
     if (num == '0') return 'zero';
     var x = num.indexOf('.');
     if (x == -1)
